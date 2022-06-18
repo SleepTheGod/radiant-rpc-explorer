@@ -1,6 +1,6 @@
 {
-  "name": "bch-rpc-explorer",
-  "version": "0.0.7",
+  "name": "rad-rpc-explorer",
+  "version": "0.0.8",
   "lockfileVersion": 1,
   "requires": true,
   "dependencies": {
@@ -297,8 +297,8 @@
       }
     },
     "bitcoin-core": {
-      "version": "github:EchterAgo/bitcoin-core#c30b4a0cd51305449c08ca361b15afc1646b5388",
-      "from": "github:EchterAgo/bitcoin-core#c30b4a0cd51305449c08ca361b15afc1646b5388",
+      "version": "git+ssh://git@github.com/EchterAgo/bitcoin-core.git#c30b4a0cd51305449c08ca361b15afc1646b5388",
+      "from": "bitcoin-core@EchterAgo/bitcoin-core#c30b4a0cd51305449c08ca361b15afc1646b5388",
       "requires": {
         "@uphold/request-logger": "^2.0.0",
         "bluebird": "^3.4.1",
@@ -891,8 +891,8 @@
       "integrity": "sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0="
     },
     "electrum-client": {
-      "version": "github:janoside/electrum-client#d98e929028d2b05c88a41fe37652737912bead79",
-      "from": "github:janoside/electrum-client"
+      "version": "git+ssh://git@github.com/janoside/electrum-client.git#d98e929028d2b05c88a41fe37652737912bead79",
+      "from": "electrum-client@github:janoside/electrum-client"
     },
     "elliptic": {
       "version": "6.5.3",

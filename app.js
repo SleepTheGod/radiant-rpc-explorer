@@ -128,7 +128,7 @@ function loadMiningPoolConfigs() {
 
 function getSourcecodeProjectMetadata() {
 	var options = {
-		url: "https://api.github.com/repos/sickpig/bch-rpc-explorer",
+		url: "https://api.github.com/repos/radiantblockchain/rad-rpc-explorer",
 		headers: {
 			'User-Agent': 'request'
 		}

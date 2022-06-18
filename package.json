@@ -1,7 +1,7 @@
 {
-  "name": "bch-rpc-explorer",
+  "name": "rad-rpc-explorer",
   "version": "0.0.8",
-  "description": "Self-hosted Bitcoin Cash blockchain explorer",
+  "description": "Self-hosted Radiant Blockchain Explorer",
   "private": false,
   "bin": "bin/cli.js",
   "gypfile": true,
@@ -11,15 +11,15 @@
     "start-cli": "node ./bin/cli.js"
   },
   "keywords": [
-    "bitcoin cash",
+    "radiant",
+    "rad",
     "blockchain",
     "Peer-to-peer Electronic Cash System"
   ],
-  "author": "Andrea (sickpig) Suisani <sickpig@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sickpig/bch-rpc-explorer.git"
+    "url": "git+https://github.com/radiantblockchain/rad-rpc-explorer.git"
   },
   "dependencies": {
     "async": "^3.2.0",

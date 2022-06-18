@@ -1,3 +1,16 @@
+Promise.allSettled = Promise.allSettled || ((promises) => Promise.all(
+    promises.map(p => p
+        .then(value => ({
+            status: "fulfilled",
+            value
+        }))
+        .catch(reason => ({
+            status: "rejected",
+            reason
+        }))
+    )
+));
+
 var debug = require("debug");
 var debugLog = debug("bchexp:router");
 

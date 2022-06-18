@@ -52,7 +52,7 @@ var siteToolsJSON = [
   { "name": "Transaction Stats", "url": "/tx-stats", "desc": "See graphs of total transaction volume and transaction rates.", "fontawesome": "fas fa-chart-bar" },
   { "name": "Mempool Summary", "url": "/mempool-summary", "desc": "Detailed summary of the current mempool for this node.", "fontawesome": "fas fa-clipboard-list" },
   { "name": "Unconfirmed Txs", "url": "/unconfirmed-tx", "desc": "Browse unconfirmed/pending transactions.", "fontawesome": "fas fa-unlock-alt" },
-  { "name": `${coins[currentCoin].name} Fun`, "url": "/fun", "desc": "See fun/interesting historical blockchain data.", "fontawesome": "fas fa-certificate" },
+  { "name": `${coins[currentCoin].name} Txs`, "url": "/fun", "desc": "See fun/interesting historical blockchain data.", "fontawesome": "fas fa-certificate" },
   { "name": "Mining Summary", "url": "/mining-summary", "desc": "Summary of recent data about miners.", "fontawesome": "fas fa-chart-pie" },
   { "name": "Block Stats", "url": "/block-stats", "desc": "Summary data for blocks in configurable range.", "fontawesome": "fas fa-layer-group" },
   { "name": "Block Analysis", "url": "/block-analysis", "desc": "Summary analysis for all transactions in a block.", "fontawesome": "fas fa-angle-double-down" },
@@ -174,6 +174,7 @@ module.exports = {
     addressPage:{
       txOutputMaxDefaultDisplay:10
     },
+    
     valueDisplayMaxLargeDigits: 4,
     header:{
       showToolsSubheader:(process.env.BTCEXP_UI_SHOW_TOOLS_SUBHEADER == "true"),
@@ -182,11 +183,8 @@ module.exports = {
           title:"Related Sites",
           links:[
             // TODO: find better images for this URLs, in the mean time use bch.svg
-            {name: "Bitcoin Unlimited", url:"https://bitcoinunlimited.info", imgUrl:"/img/logo/bu.png"},
-            {name: "Bitcoin Cash Nodes", url:"https://cashnodes.io", imgUrl:"/img/logo/bch.svg"},
-            {name: "BCH PoW Monitoring", url:"https://fork.lol", imgUrl:"/img/logo/fork.png"},
-            {name: "BCH Specification", url:"https://reference.cash", imgUrl:"/img/logo/refcash.ico"},
-            {name: "Bitcoin Cash Node", url:"https://bitcoincashnode.org/", imgUrl:"/img/logo/bchn.png"},
+            {name: "Radiant Blockchain Github", url:"https://github.com/radiantblockchain", imgUrl:"/img/logo/rad.png"},
+            {name: "RadiantSwap", url:"https://radiantswap.com/", imgUrl:"/img/logo/rad.png"},
           ]
         }
       ]
@@ -201,10 +199,10 @@ module.exports = {
 
   donations:{
     addresses:{
-      coins:["BCH"],
-      sites:{"BCH":"https://bitcoinunlimited.info"},
+      coins:["RAD"],
+      sites:{"RAD":"https://radiantblockchain.org"},
 
-      "BCH":{address:"bitcoincash:pq6snv5fcx2fp6dlzg7s0m9zs8yqh74335tzvvfcmq"}
+      "RAD":{address:"1EWLon4h3neosF5teMT61S9RBd9Kg7icLA"}
     }
   }
 
