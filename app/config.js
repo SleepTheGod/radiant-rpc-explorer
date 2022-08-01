@@ -5,7 +5,7 @@ var url = require('url');
 var coins = require("./coins.js");
 var credentials = require("./credentials.js");
 
-var currentCoin = process.env.BTCEXP_COIN || "BCH";
+var currentCoin = process.env.BTCEXP_COIN || "RAD";
 
 var rpcCred = credentials.rpc;
 

@@ -521,7 +521,7 @@ module.exports = {
 		}
 	],
 	blockRewardFunction:function(blockHeight, chain) {
-		var eras = [ new Decimal8(50) ];
+		var eras = [ new Decimal8(50000) ];
 		for (var i = 1; i < 34; i++) {
 			var previous = eras[i - 1];
 			eras.push(new Decimal8(previous).dividedBy(2));
