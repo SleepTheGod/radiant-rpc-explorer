@@ -1,15 +1,12 @@
 # RADIANT RPC Explorer
 
-[![npm version][npm-ver-img]][npm-ver-url] [![NPM downloads][npm-dl-img]][npm-dl-url]
+Simple, database-free Radiant blockchain explorer, via RPC. Built with Node.js, express, bootstrap-v4.
 
-
-Simple, database-free Bitcoin Cash blockchain explorer, via RPC. Built with Node.js, express, bootstrap-v4.
-
-This tool is intended to be a simple, self-hosted explorer for the Bitcoin blockchain, driven by RPC calls to your own bitcoind node. This tool is easy to run but currently lacks features compared to database-backed explorers.
+This tool is intended to be a simple, self-hosted explorer for the Radiant blockchain, driven by RPC calls to your own radiantd node. This tool is easy to run but currently lacks features compared to database-backed explorers.
 
 Whatever reasons one might have for running a full node (trustlessness, technical curiosity, supporting the network, etc) it's helpful to appreciate the "fullness" of your node. With this explorer, you can not only explore the blockchain (in the traditional sense of the term "explorer"), but also explore the functional capabilities of your own node.
 
-Live demo available at: [https://explorer.bitcoinunlimited.info](https://explorer.bitcoinunlimited.info)
+Live demo available at: [(https://explorer.radiantblockchain.org](https://explorer.radiantblockchain.org)
 
 # Features
 
@@ -32,12 +29,11 @@ The below instructions are geared toward BCH, but can be adapted easily to other
 
 ## Prerequisites
 
-1. Install and run a full, archiving node - [instructions](https://bitcoinunlimited.info/download). Ensure that your bitcoin node has full transaction indexing enabled (`txindex=1`) and the RPC server enabled (`server=1`) adding the flags into the bitcoind executable.
-2. Synchronize your node with the Bitcoin network.
+1. Install and run a full, archiving node - [instructions](https://github.com/radiantblockchain/radiant-node). Ensure that your radiant node has full transaction indexing enabled (`txindex=1`) and the RPC server enabled (`server=1`) adding the flags into the radiantd executable.
+2. Synchronize your node with the Radiant network.
 3. Run radiant-rpc-explorer passing the cookie route based on the defined path to store files download with BCH-Unlimited. (Check cli arguments section)
 3. "Recent" version of Node.js (8+ recommended).
-4. You could also run an [ElectrsCash](https://github.com/bitcoinunlimited/ElectrsCash) and configure the explorer to received data from it (optional)
-5. You need to use nodejs version 12.9 or higher due to the use of [Promise.allSettled()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled) method
+4. You need to use nodejs version 12.9 or higher due to the use of [Promise.allSettled()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled) method
 
 ## Instructions
 
@@ -75,13 +71,3 @@ See `radiant-rpc-explorer --help` for the full list of CLI options.
 
 1. `docker build -t radiant-rpc-explorer .`
 2. `docker run -p 3002:3002 -it radiant-rpc-explorer`
-
-# Support
-
- 
-
-[npm-ver-img]: https://img.shields.io/npm/v/radiant-rpc-explorer.svg?style=flat
-[npm-ver-url]: https://www.npmjs.com/package/radiant-rpc-explorer
-[npm-dl-img]: http://img.shields.io/npm/dm/radiant-rpc-explorer.svg?style=flat
-[npm-dl-url]: https://npmcharts.com/compare/radiant-rpc-explorer?minimal=true
-
