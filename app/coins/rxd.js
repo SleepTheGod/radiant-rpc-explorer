@@ -4,17 +4,17 @@ Decimal8 = Decimal.clone({ precision:8, rounding:8 });
 var currencyUnits = [
 	{
 		type:"native",
-		name:"RAD",
+		name:"RXD",
 		multiplier:1,
 		default:true,
-		values:["", "rad", "BCRADH"],
+		values:["", "rxd", "BCRADH"],
 		decimalPlaces:8
 	},
 	{
 		type:"native",
-		name:"mRAD",
+		name:"mRXD",
 		multiplier:1000,
-		values:["mrad"],
+		values:["mrxd"],
 		decimalPlaces:5
 	},
 	{
@@ -60,12 +60,12 @@ var currencyUnits = [
 
 module.exports = {
 	name:"Radiant Blockchain",
-	ticker:"RAD",
-	logoUrl:"/img/logo/rad.png",
-	faviconUrl:"/img/logo/rad.ico",
+	ticker:"RXD",
+	logoUrl:"/img/logo/rxd.png",
+	faviconUrl:"/img/logo/rxd.ico",
 	siteTitle:"Radiant Blockchain Explorer",
 	siteTitleHtml:"Radiant Blockchain Explorer",
-	siteDescriptionHtml:"<b>RAD Explorer</b> is <a href='https://github.com/radiantblockchain/rad-rpc-explorer). If you run your own [Radiant Blockchain Full Node](https://radiantblockchain.org), **RAD Explorer** can easily run alongside it, communicating via RPC calls. See the project [ReadMe](https://github.com/radiantblockchain/rad-rpc-explorer) for a list of features and instructions for running.",
+	siteDescriptionHtml:"<b>RXD Explorer</b> is <a href='https://github.com/radiantblockchain/rad-rpc-explorer). If you run your own [Radiant Blockchain Full Node](https://radiantblockchain.org), **RAD Explorer** can easily run alongside it, communicating via RPC calls. See the project [ReadMe](https://github.com/radiantblockchain/rad-rpc-explorer) for a list of features and instructions for running.",
 	nodeTitle:"Radiant Blockchain Full Node",
 	nodeUrl:"https://radiantblockchain.org",
 	demoSiteUrl: "https://radiantblockchain.org",
@@ -90,7 +90,7 @@ module.exports = {
 	targetBlockTimeSeconds: 600,
 	targetBlockTimeMinutes: 10,
 	currencyUnits:currencyUnits,
-	currencyUnitsByName:{"RAD":currencyUnits[0], "mRAD":currencyUnits[1], "bits":currencyUnits[2], "sat":currencyUnits[3]},
+	currencyUnitsByName:{"RXD":currencyUnits[0], "mRXD":currencyUnits[1], "bits":currencyUnits[2], "sat":currencyUnits[3]},
 	baseCurrencyUnit:currencyUnits[3],
 	defaultCurrencyUnit:currencyUnits[0],
 	feeSatoshiPerByteBucketMaxima: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 50, 75, 100, 150],

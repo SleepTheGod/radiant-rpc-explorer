@@ -1,11 +1,11 @@
 var bch = require("./coins/bch.js");
 var bab = require("./coins/bab.js");
-var rad = require("./coins/rad.js");
+var rxd = require("./coins/rad.js");
 
 module.exports = {
   "BCH": bch,
   "BAB": bab,
-  "RAD": rad,
+  "RXD": rxd,
 
-  "coins":["BCH", "BAB", "RAD"]
+  "coins":["BCH", "BAB", "RXD"]
 };
