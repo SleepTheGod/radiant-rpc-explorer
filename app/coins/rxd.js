@@ -7,7 +7,7 @@ var currencyUnits = [
 		name:"RXD",
 		multiplier:1,
 		default:true,
-		values:["", "rxd", "BCRADH"],
+		values:["", "rxd", "RXD"],
 		decimalPlaces:8
 	},
 	{
@@ -65,7 +65,7 @@ module.exports = {
 	faviconUrl:"/img/logo/rxd.ico",
 	siteTitle:"Radiant Blockchain Explorer",
 	siteTitleHtml:"Radiant Blockchain Explorer",
-	siteDescriptionHtml:"<b>RXD Explorer</b> is <a href='https://github.com/radiantblockchain/rad-rpc-explorer). If you run your own [Radiant Blockchain Full Node](https://radiantblockchain.org), **RAD Explorer** can easily run alongside it, communicating via RPC calls. See the project [ReadMe](https://github.com/radiantblockchain/rad-rpc-explorer) for a list of features and instructions for running.",
+	siteDescriptionHtml:"<b>Radiant RXD Explorer</b> is <a href='https://github.com/radiantblockchain/radiant-rpc-explorer). If you run your own [Radiant Blockchain Full Node](https://radiantblockchain.org), **RAD Explorer** can easily run alongside it, communicating via RPC calls. See the project [ReadMe](https://github.com/radiantblockchain/radiant-rpc-explorer) for a list of features and instructions for running.",
 	nodeTitle:"Radiant Blockchain Full Node",
 	nodeUrl:"https://radiantblockchain.org",
 	demoSiteUrl: "https://radiantblockchain.org",
@@ -470,11 +470,11 @@ module.exports = {
 		// jq ."result"."BCHUSD"."c"[0] and jq ."result"."BCHEUR"."c"[0]
 		// the above will return back the last trade closed at the time the url
 		// has been fetched
-		jsonUrl:"https://api.kraken.com/0/public/Ticker?pair=RADUSD,RADEUR",
+		jsonUrl:"https://api.kraken.com/0/public/Ticker?pair=RXDUSD,RXDEUR",
 		responseBodySelectorFunction:function(responseBody) {
 			//console.log("Exchange Rate Response: " + JSON.stringify(responseBody));
 
-			var exchangedCurrencies = ["RADUSD", "RADEUR"];
+			var exchangedCurrencies = ["RXDUSD", "RXDEUR"];
 
 			if (responseBody.result) {
 				var exchangeRates = {};

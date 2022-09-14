@@ -5,7 +5,7 @@ var url = require('url');
 var coins = require("./coins.js");
 var credentials = require("./credentials.js");
 
-var currentCoin = process.env.BTCEXP_COIN || "RAD";
+var currentCoin = process.env.BTCEXP_COIN || "RXD";
 
 var rpcCred = credentials.rpc;
 
@@ -183,8 +183,8 @@ module.exports = {
           title:"Related Sites",
           links:[
             // TODO: find better images for this URLs, in the mean time use bch.svg
-            {name: "Radiant Blockchain Github", url:"https://github.com/radiantblockchain", imgUrl:"/img/logo/rad.png"},
-            {name: "RadiantSwap", url:"https://radiantswap.com/", imgUrl:"/img/logo/rad.png"},
+            {name: "Radiant Blockchain Github", url:"https://github.com/radiantblockchain", imgUrl:"/img/logo/rxd.png"},
+            {name: "RadiantSwap", url:"https://radiantswap.com/", imgUrl:"/img/logo/rxd.png"},
           ]
         }
       ]
@@ -199,10 +199,10 @@ module.exports = {
 
   donations:{
     addresses:{
-      coins:["RAD"],
-      sites:{"RAD":"https://radiantblockchain.org"},
+      coins:["RXD"],
+      sites:{"RXD":"https://radiantblockchain.org"},
 
-      "RAD":{address:"1EWLon4h3neosF5teMT61S9RBd9Kg7icLA"}
+      "RXD":{address:"1EWLon4h3neosF5teMT61S9RBd9Kg7icLA"}
     }
   }
 
