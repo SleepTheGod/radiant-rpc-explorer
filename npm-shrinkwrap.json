@@ -298,7 +298,7 @@
     },
     "bitcoin-core": {
       "version": "git+ssh://git@github.com/EchterAgo/bitcoin-core.git#c30b4a0cd51305449c08ca361b15afc1646b5388",
-      "from": "bitcoin-core@EchterAgo/bitcoin-core#c30b4a0cd51305449c08ca361b15afc1646b5388",
+      "from": "EchterAgo/bitcoin-core#c30b4a0cd51305449c08ca361b15afc1646b5388",
       "requires": {
         "@uphold/request-logger": "^2.0.0",
         "bluebird": "^3.4.1",
@@ -764,17 +764,17 @@
       }
     },
     "debug": {
-      "version": "4.1.1",
-      "resolved": "https://registry.npmjs.org/debug/-/debug-4.1.1.tgz",
-      "integrity": "sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==",
+      "version": "4.3.1",
+      "resolved": "https://registry.npmjs.org/debug/-/debug-4.3.1.tgz",
+      "integrity": "sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==",
       "requires": {
-        "ms": "^2.1.1"
+        "ms": "2.1.2"
       },
       "dependencies": {
         "ms": {
-          "version": "2.1.1",
-          "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.1.tgz",
-          "integrity": "sha512-tgp+dl5cGk28utYktBsrFqA7HKgrhgPsg6Z/EfhWI4gl1Hwq8B/GmY/0oXZ6nF8hDVesS/FpnYaD/kOWhYQvyg=="
+          "version": "2.1.2",
+          "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz",
+          "integrity": "sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w=="
         }
       }
     },
@@ -892,7 +892,7 @@
     },
     "electrum-client": {
       "version": "git+ssh://git@github.com/janoside/electrum-client.git#d98e929028d2b05c88a41fe37652737912bead79",
-      "from": "electrum-client@github:janoside/electrum-client"
+      "from": "github:janoside/electrum-client"
     },
     "elliptic": {
       "version": "6.5.3",
